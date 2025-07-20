@@ -1,0 +1,190 @@
+@import url("assets/birds/style.css");
+
+@font-face {
+    font-family: "Viva";
+    src: url("assets/e111viva.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-swiper {
+    .swiper-wrapper {
+        .swiper-slide {
+            .content {
+                .fill > * {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .fill-header {
+                    .header {
+                        font-family: "Viva", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.open-btn {
+    --btn-outline-custom-color: #556b2f; /* default: Bootstrap primary */
+    background: transparent;
+    border-color: var(--btn-outline-custom-color);
+    border-width: 1px !important;
+    color: var(--btn-outline-custom-color);
+    transition: none;
+}
+
+.open-btn:hover,
+.open-btn:active {
+    background: var(--btn-outline-custom-color, #556b2f);
+    background: color-mix(
+        in srgb,
+        var(--btn-outline-custom-color, #556b2f) 15%,
+        transparent
+    );
+    /* fallback if color-mix is not supported: just use a light background */
+    border-color: var(--btn-outline-custom-color) !important;
+    color: var(--btn-outline-custom-color) !important;
+}
+
+.open-btn.active {
+    background: var(--btn-outline-custom-color) !important;
+    color: #fff !important;
+    border-color: var(--btn-outline-custom-color) !important;
+}
+
+.countdown {
+}
+
+.swiper-gallery {
+}
+
+.banner-background,
+.cover-background {
+    background: rgba(254, 252, 242, 0.9) url("assets/background.jpeg") !important;
+    background-blend-mode: lighten;
+    background-size: 100% !important;
+    background-position: center;
+    background-repeat: repeat !important;
+    color: #333333;
+}
+
+.title-color {
+    color: #355e3b;
+}
+
+.font-script {
+    font-family: "Viva", sans-serif;
+    color: #355e3b;
+}
+
+.card-pagination-icon.custom {
+    .swiper-pagination-bullet {
+        background: rgba(0, 0, 0, 0.2);
+        color: #aaa;
+
+        &.swiper-pagination-bullet-active {
+            color: #333333;
+            background: rgba(254, 252, 242, 0.5);
+        }
+    }
+}
+
+.cover-overlay .content {
+    color: #333333;
+}
+
+.slide_opening {
+    background: linear-gradient(to top, rgba(254, 252, 242, 0.8), transparent);
+    position: relative;
+}
+.slide_opening .content {
+    color: #333333;
+    position: absolute;
+    bottom: 0;
+    .fill {
+        padding-bottom: 80px !important;
+    }
+}
+
+.slide_quote {
+    background: url("assets/img-tree-shadow-01.png");
+    background-color: rgba(145, 174, 134, 0.5) !important;
+}
+
+.slide_couple {
+    background-color: rgba(254, 252, 242, 0.7) !important;
+}
+
+.slide_event {
+    background: url("assets/img-tree-shadow-01.png");
+    background-color: rgba(145, 174, 134, 0.5) !important;
+}
+
+.slide_map {
+    background-color: rgba(145, 174, 134, 0.8) !important;
+    color: #ffffff;
+}
+
+.slide_message {
+    background-color: rgba(254, 252, 242, 0.8) !important;
+}
+
+.slide_story {
+    background: url("assets/img-tree-shadow-01.png");
+    background-color: rgba(254, 252, 242, 0.8) !important;
+}
+
+.slide_gallery {
+    background-color: rgba(145, 174, 134, 0.8) !important;
+    color: #ffffff;
+}
+
+.slide_wish {
+    background-color: rgba(145, 174, 134, 0.5) !important;
+}
+
+.slide_closing {
+    background-color: rgba(254, 252, 242, 0.7) !important;
+}
+
+.embed-map-responsive {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.66666666666666%;
+}
+
+.embed-map-container {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.embed-map-frame {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tick-text-inline,
+.tick-label {
+    color: #fff !important;
+}
+
+.tick-flip-panel {
+    background-color: #fff !important;
+    color: #222 !important;
+}
+
+.tick-flip-panel-back {
+    background-color: #f6f6f6 !important;
+    color: #222 !important;
+}

@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Viva";
+    src: url("assets/e111viva.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-swiper {
+    .swiper-wrapper {
+        .swiper-slide {
+            .content {
+                .fill > * {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .fill-header {
+                    .header {
+                        font-family: "Viva", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.countdown {
+}
+
+.swiper-gallery {
+}
+
+.card-secondary-section {
+    .banner {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    }
+}
+
+.font-script {
+    font-family: "Viva", sans-serif;
+}
+.cover-overlay .cover {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.card-pagination-icon.custom {
+    .swiper-pagination-bullet {
+        background: rgba(0, 0, 0, 0.2);
+        color: #aaa;
+
+        &.swiper-pagination-bullet-active {
+            color: #333333;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.cover-overlay .content {
+    color: #ffffff;
+}
+
+.slide_opening {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    position: relative;
+}
+.slide_opening .content {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    .fill {
+        padding-bottom: 80px !important;
+    }
+}
+
+.slide_quote {
+    background: url("assets/img-tree-shadow-01.png");
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.slide_couple {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.slide_event {
+    background: url("assets/img-tree-shadow-01.png");
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.slide_map {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #ffffff;
+}
+
+.slide_message {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.slide_story {
+    background: url("assets/img-tree-shadow-01.png");
+
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.slide_gallery {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #ffffff;
+}
+
+.slide_wish {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.slide_closing {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.slide-three {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    .content {
+        text-align: center;
+        .ampersand {
+            font-size: 48px;
+        }
+    }
+}
+
+.slide-four {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.embed-map-responsive {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.66666666666666%;
+}
+
+.embed-map-container {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.embed-map-frame {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tick-text-inline,
+.tick-label {
+    color: #fff !important;
+}
+
+.tick-flip-panel {
+    background-color: #fff !important;
+    color: #222 !important;
+}
+
+.tick-flip-panel-back {
+    background-color: #f6f6f6 !important;
+    color: #222 !important;
+}

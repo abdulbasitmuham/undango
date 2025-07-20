@@ -1,0 +1,409 @@
+{
+    "slides": {
+        "slide_opening": {
+            "title": "Pembuka",
+            "icon_class": "ti ti-sun",
+            "show_header": false,
+            "fields": {
+                "cover_title": {
+                    "type": "text",
+                    "label": "Judul Sampul",
+                    "default": "The Wedding of"
+                },
+                "show_countdown": {
+                    "type": "switch",
+                    "label": "Tampilkan Hitung Mundur",
+                    "default": true,
+                    "package": 2
+                },
+                "show_save_the_date": {
+                    "type": "switch",
+                    "label": "Tampilkan Simpan Tanggal",
+                    "default": false,
+                    "package": 2
+                }
+            }
+        },
+        "slide_quote": {
+            "title": "Kutipan",
+            "icon_class": "ti ti-quote",
+            "show_header": true,
+            "fields": {
+                "couple_logo": {
+                    "type": "select",
+                    "label": "Logo Mempelai",
+                    "default": "warm",
+                    "options": {
+                        "elegant": "Elegant",
+                        "warm": "Warm",
+                        "clean": "Clean"
+                    }
+                },
+                "quote_content": {
+                    "type": "textarea",
+                    "label": "Isi Kutipan",
+                    "assistant": "Berikan contoh kutipan undangan dari Al Quran",
+                    "default": "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."
+                },
+                "quote_source": {
+                    "type": "text",
+                    "label": "Sumber Kutipan",
+                    "default": "QS Ar Rum : 21"
+                }
+            }
+        },
+        "slide_couple": {
+            "title": "Mempelai",
+            "icon_class": "ti ti-heart",
+            "show_header": true,
+            "fields": {
+                "couple_caption": {
+                    "type": "textarea",
+                    "label": "Kalimat Mempelai",
+                    "default": "Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami."
+                },
+                "bride_first": {
+                    "type": "switch",
+                    "label": "Dahulukan Mempelai Wanita",
+                    "default": "true"
+                },
+                "bride_photos": {
+                    "type": "files",
+                    "label": "Foto Wanita",
+                    "mimes": "jpg,png,jpeg,webp",
+                    "array_max": 3,
+                    "default": ["undango-4", "undango-5"],
+                    "package": 2
+                },
+                "bride_fullname": {
+                    "type": "text",
+                    "label": "Nama Lengkap Wanita",
+                    "default": "Bunga Lestari"
+                },
+                "bride_nickname": {
+                    "type": "text",
+                    "label": "Nama Panggilan Wanita",
+                    "default": "Bunga"
+                },
+                "bride_parent": {
+                    "type": "text",
+                    "label": "Orangtua Wanita",
+                    "default": "Bapak Joko & Ibu Sari"
+                },
+                "bride_origin": {
+                    "type": "text",
+                    "label": "Asal Wanita",
+                    "default": "Bandung"
+                },
+                "bride_instagram": {
+                    "type": "instagram",
+                    "label": "Instagram Wanita",
+                    "default": "bunga_lestari"
+                },
+                "groom_photos": {
+                    "type": "files",
+                    "label": "Foto Pria",
+                    "mimes": "jpg,png,jpeg,webp",
+                    "array_max": 3,
+                    "default": ["undango-6", "undango-7"],
+                    "package": 2
+                },
+                "groom_fullname": {
+                    "type": "text",
+                    "label": "Nama Lengkap Pria",
+                    "default": "Andi Arif"
+                },
+                "groom_nickname": {
+                    "type": "text",
+                    "label": "Nama Panggilan Pria",
+                    "default": "Andi"
+                },
+                "groom_parent": {
+                    "type": "text",
+                    "label": "Orangtua Pria",
+                    "default": "Bapak Arman & Ibu Ratna"
+                },
+                "groom_origin": {
+                    "type": "text",
+                    "label": "Asal Pria",
+                    "default": "Jakarta"
+                },
+                "groom_instagram": {
+                    "type": "instagram",
+                    "label": "Instagram Pria",
+                    "default": "andi_arif"
+                }
+            }
+        },
+        "slide_event": {
+            "title": "Acara",
+            "icon_class": "ti ti-calendar-event",
+            "show_header": true,
+            "video_mode": true,
+            "fields": {
+                "event_name": {
+                    "type": "text",
+                    "label": "Nama Acara",
+                    "default": "Resepsi"
+                },
+                "event_date": {
+                    "type": "date",
+                    "label": "Tanggal Acara",
+                    "default": "2025-07-20"
+                },
+                "event_time": {
+                    "type": "time",
+                    "label": "Waktu Acara",
+                    "default": "10:00"
+                },
+                "use_event_end_time": {
+                    "type": "switch",
+                    "label": "Gunakan Waktu Selesai",
+                    "default": true
+                },
+                "event_end_time": {
+                    "type": "time",
+                    "label": "Waktu Selesai",
+                    "default": "15:00"
+                },
+                "event_location": {
+                    "type": "text",
+                    "label": "Lokasi Acara",
+                    "default": "Gedung Serbaguna Bahagia"
+                },
+                "event_fulladdress": {
+                    "type": "textarea",
+                    "label": "Alamat Lengkap Acara",
+                    "default": "Jl. Kebahagiaan No. 10, Bandung",
+                    "assistant_title": "Konversi Alamat ke Longitude, Latitude",
+                    "assistant": "Bantu konversi alamat saya ke Longitude, Latitude"
+                },
+                "event_coordinates": {
+                    "type": "map",
+                    "label": "Lokasi Acara",
+                    "default": "-7.257190034874759,112.75269245962629"
+                },
+                "show_dresscode": {
+                    "type": "switch",
+                    "label": "Tampilkan Dress Code",
+                    "default": true
+                },
+                "dresscode_1": {
+                    "type": "color",
+                    "label": "Dress Code",
+                    "default": "#F8BBD0",
+                    "assistant": "Berikan rekomendasi warna dress code"
+                },
+                "dresscode_2": {
+                    "type": "color",
+                    "label": "Dress Code Alternatif",
+                    "default": "#B39DDB"
+                },
+                "streaming_url": {
+                    "type": "text",
+                    "label": "Tautan Streaming",
+                    "default": "https://youtu.be/EOtzo5Kh0ts",
+                    "package": 3
+                },
+                "show_ceremony": {
+                    "type": "switch",
+                    "label": "Tampilkan Akad Nikah",
+                    "default": true,
+                    "package": 2
+                },
+                "ceremony_date": {
+                    "type": "date",
+                    "label": "Tanggal Akad",
+                    "default": "2025-07-20",
+                    "package": 2
+                },
+                "ceremony_time": {
+                    "type": "time",
+                    "label": "Waktu Akad",
+                    "default": "08:00",
+                    "package": 2
+                },
+                "ceremony_location": {
+                    "type": "text",
+                    "label": "Lokasi Akad",
+                    "default": "Masjid Baiturrahman",
+                    "package": 2
+                },
+                "ceremony_fulladdress": {
+                    "type": "textarea",
+                    "label": "Alamat Lengkap Akad",
+                    "package": 2
+                },
+                "ceremony_coordinates": {
+                    "type": "map",
+                    "label": "Lokasi Akad",
+                    "package": 2
+                }
+            }
+        },
+        "slide_message": {
+            "title": "Ucapan",
+            "icon_class": "ti ti-brand-hipchat",
+            "show_header": true,
+            "fields": {
+                "message_caption": {
+                    "type": "text",
+                    "label": "Kalimat Ucapan",
+                    "default": "Dengan segala kerendahan hati, kami memohon doa restu agar langkah kami menuju hari bahagia senantiasa diberkahi"
+                }
+            }
+        },
+        "slide_story": {
+            "title": "Kisah",
+            "icon_class": "ti ti-book",
+            "show_header": true,
+            "fields": {
+                "stories": {
+                    "type": "stories",
+                    "label": "Kisah",
+                    "array_max": 3,
+                    "package": 2,
+                    "default": [
+                        {
+                            "date": "2020-02-04",
+                            "file": "undango-7",
+                            "caption": "Pertama kali bertemu pada tahun 2020 di sebuah seminar di Bandung. Dari sana, komunikasi semakin intens."
+                        },
+                        {
+                            "date": "2025-01-30",
+                            "file": "undango-9",
+                            "caption": "Andi menyatakan keseriusan untuk memilih Bunga"
+                        }
+                    ]
+                }
+            }
+        },
+        "slide_gallery": {
+            "title": "Galeri",
+            "icon_class": "ti ti-layout-collage",
+            "show_header": true,
+            "fields": {
+                "prewedding_photos": {
+                    "type": "files",
+                    "label": "Galery Foto",
+                    "mimes": "jpg,png,jpeg,webp",
+                    "array_max": 10,
+                    "package": 2,
+                    "default": [
+                        "undango-2",
+                        "undango-3",
+                        "undango-8",
+                        "undango-9",
+                        "undango-10"
+                    ]
+                },
+                "prewedding_video": {
+                    "type": "youtube",
+                    "label": "Video Prewedding",
+                    "default": "https://youtu.be/EOtzo5Kh0ts",
+                    "package": 3
+                }
+            }
+        },
+        "slide_wish": {
+            "title": "Kado",
+            "icon_class": "ti ti-gift",
+            "show_header": true,
+            "video_mode": false,
+            "fields": {
+                "wish_caption": {
+                    "type": "text",
+                    "label": "Kalimat Kado",
+                    "default": "Ingin berbagi kebahagiaan lewat kado? Lihat wishlist kado impian kami, ya!"
+                },
+                "show_wish_address": {
+                    "type": "switch",
+                    "label": "Tampilkan Alamat Rumah",
+                    "info": "Kamu perlu mengatur alamatmu di menu profil",
+                    "default": true
+                },
+
+                "show_wishlist": {
+                    "type": "switch",
+                    "label": "Tampilkan Kado Impian",
+                    "default": true,
+                    "package": 2
+                },
+                "show_bank_1": {
+                    "type": "switch",
+                    "label": "Tampilkan Bank",
+                    "default": true
+                },
+
+                "bank_name_1": {
+                    "type": "select",
+                    "label": "Nama Bank",
+                    "default": "bca",
+                    "options": "payments"
+                },
+                "bank_account_name_1": {
+                    "type": "text",
+                    "label": "Atas Nama Rekening",
+                    "default": "Bunga Lestari"
+                },
+                "bank_account_number_1": {
+                    "type": "text",
+                    "label": "Nomor Rekening",
+                    "default": "1234567890"
+                },
+                "show_bank_2": {
+                    "type": "switch",
+                    "label": "Tampilkan Bank Alternatif",
+                    "default": true,
+                    "package": 2
+                },
+                "bank_name_2": {
+                    "type": "select",
+                    "label": "Nama Bank Alternatif",
+                    "default": "bni",
+                    "options": "payments",
+                    "package": 2
+                },
+                "bank_account_name_2": {
+                    "type": "text",
+                    "label": "Atas Nama Rekening Alternatif",
+                    "default": "Bunga Lestari",
+                    "package": 2
+                },
+                "bank_account_number_2": {
+                    "type": "text",
+                    "label": "Nomor Rekening Alternatif",
+                    "default": "1234567890",
+                    "package": 2
+                }
+            }
+        },
+        "slide_closing": {
+            "title": "Penutup",
+            "icon_class": "ti ti-sunset-2",
+            "show_header": false,
+            "fields": {
+                "closing_title": {
+                    "type": "text",
+                    "label": "Judul Penutup",
+                    "default": "Terima Kasih"
+                },
+                "closing_caption": {
+                    "type": "textarea",
+                    "label": "Kalimat Penutup",
+                    "default": "Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan doa restu kepada kami."
+                },
+                "show_couple_name": {
+                    "type": "switch",
+                    "label": "Tampilkan Nama Mempelai",
+                    "default": true
+                },
+                "show_parent_name": {
+                    "type": "switch",
+                    "label": "Tampilkan Nama Orangtua",
+                    "default": true
+                }
+            }
+        }
+    }
+}
