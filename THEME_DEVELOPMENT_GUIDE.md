@@ -189,28 +189,13 @@ The application includes predefined animation classes:
 ### Package-Based Features:
 
 Check feature availability using `$active_mode`:
-
-```php
-@if ($active_mode['gold'])
-    <!-- Gold package features -->
 @endif
-
-@if ($active_mode['diamond'])
-    <!-- Diamond package features -->
-@endif
-```
-
-## 3. Theme Styles (view.css)
-
-Define theme-specific styles and customize the appearance of each slide.
 
 ### Font Integration:
 
 ```css
 @font-face {
     font-family: "CustomFont";
-    src: url("assets/font.ttf") format("truetype");
-    font-weight: normal;
     font-style: normal;
 }
 
