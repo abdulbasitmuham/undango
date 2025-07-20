@@ -186,6 +186,45 @@ The application includes predefined animation classes:
 - `a__rotateInDownLeft__1s`, `a__rotateInDownRight__1s`
 - `a__wind` (for subtle wind animation)
 
+The application includes predefined animation classes with flexible timing options:
+
+#### Base Animation Classes:
+- `a__fadeIn` - Fade in animation (immediate)
+- `a__fadeInUp` - Fade in from bottom (immediate)
+- `a__fadeInDown` - Fade in from top (immediate)
+- `a__fadeInLeft` - Fade in from left (immediate)
+- `a__fadeInRight` - Fade in from right (immediate)
+- `a__rotateInDownLeft` - Rotate in from top-left (immediate)
+- `a__rotateInDownRight` - Rotate in from top-right (immediate)
+- `a__wind` - Subtle wind animation (continuous)
+
+#### Animation Delays:
+Add timing suffixes to delay animation start:
+- `__1s` - Start after 1 second
+- `__2s` - Start after 2 seconds  
+- `__3s` - Start after 3 seconds
+- `__4s` - Start after 4 seconds
+- `__5s` - Start after 5 seconds (maximum)
+
+#### Speed Modifiers:
+- `__slow` - Slower animation speed
+- `__slower` - Much slower animation speed
+
+#### Usage Examples:
+```html
+<!-- Immediate animations -->
+<div class="a__fadeIn">Fades in immediately</div>
+<div class="a__fadeInUp">Slides up immediately</div>
+
+<!-- Delayed animations -->
+<div class="a__fadeIn__2s">Fades in after 2 seconds</div>
+<div class="a__fadeInDown__3s">Slides down after 3 seconds</div>
+
+<!-- Combined with speed modifiers -->
+<div class="a__rotateInDownLeft__1s__slow">Rotates in slowly after 1 second</div>
+<div class="a__fadeInUp__2s__slower">Fades up very slowly after 2 seconds</div>
+```
+
 ### Package-Based Features:
 
 Check feature availability using `$active_mode`:
