@@ -209,6 +209,8 @@ Add timing suffixes to delay animation start:
 #### Speed Modifiers:
 - `__slow` - Slower animation speed
 - `__slower` - Much slower animation speed
+- `__fast` - Faster animation speed
+- `__faster` - Much faster animation speed
 
 #### Usage Examples:
 ```html
@@ -223,6 +225,8 @@ Add timing suffixes to delay animation start:
 <!-- Combined with speed modifiers -->
 <div class="a__rotateInDownLeft__1s__slow">Rotates in slowly after 1 second</div>
 <div class="a__fadeInUp__2s__slower">Fades up very slowly after 2 seconds</div>
+<div class="a__fadeInDown__1s__fast">Slides down quickly after 1 second</div>
+<div class="a__fadeIn__3s__faster">Fades in very quickly after 3 seconds</div>
 ```
 
 ### Package-Based Features:
