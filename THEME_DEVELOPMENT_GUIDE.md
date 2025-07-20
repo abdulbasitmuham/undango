@@ -482,6 +482,54 @@ assets/
 {{ Upload::getUrl($fields['cover_photo']) }}
 ```
 
+### Background Images:
+
+Background images are used as the backdrop for invitations and guest books. Supported formats include:
+- **JPG/JPEG**: Recommended for photographic backgrounds
+- **PNG**: Good for backgrounds with transparency
+- **WebP**: Modern format with better compression
+
+The background file can be named `background.jpg`, `background.jpeg`, or `background.png` depending on the format used.
+
+### Photo Frame Component:
+
+The `<x-photo-frame>` component is used to display photos with decorative frames. Frame assets don't have to be named "frame" - you can use descriptive names:
+
+```php
+<x-photo-frame 
+    id="cover_photo" 
+    class="a__fadeInDown__1s" 
+    :photo="Upload::getUrl($fields['cover_photo'])"
+    frame="{{ Upload::getThemeAssetUrl('frame-elegant', $this->invitation->theme_slug) }}" 
+    rounded="0" 
+    f-width="200"
+    p-width="115" 
+    p-height="150" 
+/>
+
+<!-- Alternative frame examples -->
+<x-photo-frame 
+    frame="{{ Upload::getThemeAssetUrl('frame-floral', $this->invitation->theme_slug) }}" 
+    <!-- other props -->
+/>
+
+<x-photo-frame 
+    frame="{{ Upload::getThemeAssetUrl('frame-vintage', $this->invitation->theme_slug) }}" 
+    <!-- other props -->
+/>
+```
+
+#### Photo Frame Properties:
+- **id**: Unique identifier for the photo frame
+- **photo**: Photo URL or array of URLs for multiple photos
+- **frame**: Frame asset URL from theme assets
+- **rounded**: Border radius (0 for square, 100 for circle)
+- **f-width**: Frame width in pixels
+- **p-width**: Photo width in pixels
+- **p-height**: Photo height in pixels
+- **reverse**: Boolean to reverse photo order (for multiple photos)
+- **class**: CSS classes for styling and animations
+
 ### Asset Optimization:
 
 - Use WebP format for better compression
