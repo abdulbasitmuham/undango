@@ -1,0 +1,60 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8bc34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5f5dc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer ornamental frame -->
+  <rect x="5" y="5" width="190" height="190" fill="none" stroke="url(#frameGradient)" stroke-width="8" rx="15"/>
+  
+  <!-- Inner decorative border -->
+  <rect x="15" y="15" width="170" height="170" fill="none" stroke="#8bc34a" stroke-width="2" rx="10"/>
+  
+  <!-- Corner ornaments -->
+  <g transform="translate(25,25)">
+    <circle cx="0" cy="0" r="8" fill="#ffd700"/>
+    <circle cx="0" cy="0" r="4" fill="#8bc34a"/>
+  </g>
+  
+  <g transform="translate(175,25)">
+    <circle cx="0" cy="0" r="8" fill="#ffd700"/>
+    <circle cx="0" cy="0" r="4" fill="#8bc34a"/>
+  </g>
+  
+  <g transform="translate(25,175)">
+    <circle cx="0" cy="0" r="8" fill="#ffd700"/>
+    <circle cx="0" cy="0" r="4" fill="#8bc34a"/>
+  </g>
+  
+  <g transform="translate(175,175)">
+    <circle cx="0" cy="0" r="8" fill="#ffd700"/>
+    <circle cx="0" cy="0" r="4" fill="#8bc34a"/>
+  </g>
+  
+  <!-- Traditional Sundanese floral motifs -->
+  <g transform="translate(100,35)" opacity="0.7">
+    <path d="M0,-10 Q5,-5 0,0 Q-5,-5 0,-10" fill="#8bc34a"/>
+    <path d="M0,10 Q5,5 0,0 Q-5,5 0,10" fill="#8bc34a"/>
+  </g>
+  
+  <g transform="translate(100,165)" opacity="0.7">
+    <path d="M0,-10 Q5,-5 0,0 Q-5,-5 0,-10" fill="#8bc34a"/>
+    <path d="M0,10 Q5,5 0,0 Q-5,5 0,10" fill="#8bc34a"/>
+  </g>
+  
+  <g transform="translate(35,100) rotate(90)" opacity="0.7">
+    <path d="M0,-10 Q5,-5 0,0 Q-5,-5 0,-10" fill="#ffd700"/>
+    <path d="M0,10 Q5,5 0,0 Q-5,5 0,10" fill="#ffd700"/>
+  </g>
+  
+  <g transform="translate(165,100) rotate(90)" opacity="0.7">
+    <path d="M0,-10 Q5,-5 0,0 Q-5,-5 0,-10" fill="#ffd700"/>
+    <path d="M0,10 Q5,5 0,0 Q-5,5 0,10" fill="#ffd700"/>
+  </g>
+  
+  <!-- Central transparent area for photo -->
+  <rect x="40" y="40" width="120" height="120" fill="none" stroke="#8d6e63" stroke-width="1" rx="5" opacity="0.3"/>
+</svg>

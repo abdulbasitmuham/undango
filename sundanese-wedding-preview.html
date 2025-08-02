@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundanese Wedding Theme Preview</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="sundanese-wedding/view.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .preview-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            height: 100vh;
+            max-height: 800px;
+        }
+        
+        .slide {
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .slide.active {
+            display: flex;
+        }
+        
+        .slide-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .nav-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(139, 195, 74, 0.9);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        
+        .nav-btn:hover {
+            background: var(--secondary-green);
+            transform: scale(1.1);
+        }
+        
+        .theme-info {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .demo-photo {
+            width: 120px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--primary-beige), var(--sage-green));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--earth-brown);
+            font-size: 0.8rem;
+            margin: 0 auto;
+        }
+        
+        .demo-countdown {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--accent-gold);
+            border-radius: 10px;
+            padding: 10px;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .countdown-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--earth-brown);
+        }
+        
+        .countdown-label {
+            font-size: 0.7rem;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Info -->
+    <div class="theme-info">
+        <h6 class="mb-2" style="color: var(--earth-brown);">Sundanese Wedding</h6>
+        <p class="mb-0 small" style="color: var(--text-light);">Traditional Design</p>
+    </div>
+
+    <!-- Preview Container -->
+    <div class="preview-container">
+        <!-- Opening Slide -->
+        <div class="slide slide_opening active">
+            <div class="sundanese-pattern"></div>
+            <div class="sundanese-ornament ornament-top-left"></div>
+            <div class="sundanese-ornament ornament-top-right"></div>
+            
+            <div class="slide-content">
+                <h3 class="sundanese-greeting mb-4" style="color: var(--earth-brown);">
+                    Wilujeng Sumping
+                </h3>
+                
+                <h5 class="mb-3" style="color: var(--text-light);">
+                    The Wedding of
+                </h5>
+                
+                <div class="couple-nickname mb-4">
+                    Sari & Sundara
+                </div>
+                
+                <div class="event-date mb-4" style="color: var(--earth-brown);">
+                    Minggu, 20 Juli 2025
+                </div>
+                
+                <div class="demo-countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number">15</span>
+                        <span class="countdown-label">Hari</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">08</span>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">30</span>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quote Slide -->
+        <div class="slide slide_quote">
+            <div class="slide-content">
+                <div class="mb-4" style="font-family: 'Playfair Display', serif; color: var(--secondary-green); font-size: 1.5rem;">
+                    Sari & Sundara
+                </div>
+                
+                <div class="sundanese-quote">
+                    "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."
+                </div>
+                <div class="quote-decoration"></div>
+                
+                <p class="text-muted font-italic">
+                    — QS. Ar-Rum: 21
+                </p>
+                
+                <div class="mt-4 p-3 rounded" style="background: rgba(139, 195, 74, 0.1); border-left: 4px solid var(--secondary-green);">
+                    <p class="mb-0 font-italic" style="color: var(--earth-brown);">
+                        "Cinta moal layu ku usum, moal garing ku halodo"
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Couple Slide -->
+        <div class="slide slide_couple">
+            <div class="slide-content">
+                <div class="text-center mb-4">
+                    <h3 style="color: var(--earth-brown);">Kedua Mempelai</h3>
+                </div>
+                
+                <!-- Bride -->
+                <div class="couple-info mb-4">
+                    <div class="demo-photo mb-3">
+                        Foto Mempelai
+                    </div>
+                    <h4 class="couple-name">Sari Dewi Sundari</h4>
+                    <div class="couple-nickname">Sari</div>
+                    <div class="couple-parents">
+                        <p class="mb-1">Putri kedua dari:</p>
+                        <p class="mb-0">Bapak Dedi Mulyadi</p>
+                        <p class="mb-0">& Ibu Neneng Salmah</p>
+                    </div>
+                </div>
+                
+                <!-- Groom -->
+                <div class="couple-info">
+                    <div class="demo-photo mb-3">
+                        Foto Mempelai
+                    </div>
+                    <h4 class="couple-name">Ahmad Sundara</h4>
+                    <div class="couple-nickname">Sundara</div>
+                    <div class="couple-parents">
+                        <p class="mb-1">Putra pertama dari:</p>
+                        <p class="mb-0">Bapak Asep Suryadi</p>
+                        <p class="mb-0">& Ibu Siti Rohayati</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Slide -->
+        <div class="slide slide_event">
+            <div class="slide-content">
+                <div class="text-center mb-4">
+                    <h3 style="color: var(--earth-brown);">Acara Pernikahan</h3>
+                </div>
+                
+                <!-- Akad Nikah -->
+                <div class="event-card mb-3">
+                    <h4 class="event-title">Akad Nikah</h4>
+                    <div class="event-date">Minggu, 20 Juli 2025</div>
+                    <div class="event-time">08:00 - 10:00 WIB</div>
+                    <div class="event-location mt-2">
+                        <strong>Masjid Agung Bandung</strong>
+                    </div>
+                    <div class="event-location">
+                        Jl. Asia Afrika No. 92, Bandung, Jawa Barat
+                    </div>
+                </div>
+                
+                <!-- Resepsi -->
+                <div class="event-card">
+                    <h4 class="event-title">Resepsi Pernikahan</h4>
+                    <div class="event-date">Minggu, 20 Juli 2025</div>
+                    <div class="event-time">19:00 - 21:00 WIB</div>
+                    <div class="event-location mt-2">
+                        <strong>Gedung Serbaguna Saung Udjo</strong>
+                    </div>
+                    <div class="event-location">
+                        Jl. Padasuka No. 118, Bandung, Jawa Barat
+                    </div>
+                </div>
+                
+                <!-- Sundanese Tradition -->
+                <div class="sundanese-tradition">
+                    <i class="ti ti-star"></i>
+                    Acara akan dimeriahkan dengan tarian Jaipong dan musik tradisional Degung
+                </div>
+            </div>
+        </div>
+
+        <!-- Closing Slide -->
+        <div class="slide slide_closing">
+            <div class="batik-pattern"></div>
+            <div class="sundanese-ornament ornament-bottom-left"></div>
+            <div class="sundanese-ornament ornament-bottom-right"></div>
+            
+            <div class="slide-content">
+                <div class="closing-message">
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.
+                </div>
+                
+                <div class="my-4" style="font-family: 'Playfair Display', serif; color: var(--secondary-green); font-size: 1.5rem;">
+                    Sari & Sundara
+                </div>
+                
+                <div class="closing-signature">
+                    Keluarga Besar Kedua Mempelai
+                </div>
+                
+                <div class="sundanese-closing">
+                    Hatur nuhun pisan
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">
+            <i class="ti ti-chevron-left"></i>
+        </button>
+        <button class="nav-btn" onclick="nextSlide()">
+            <i class="ti ti-chevron-right"></i>
+        </button>
+        <button class="nav-btn" onclick="resetAnimations()">
+            <i class="ti ti-refresh"></i>
+        </button>
+    </div>
+
+    <!-- Theme JavaScript -->
+    <script src="sundanese-wedding/view.js"></script>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+            resetAnimations();
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+            resetAnimations();
+        }
+
+        function resetAnimations() {
+            const activeSlide = document.querySelector('.slide.active');
+            if (!activeSlide) return;
+            
+            const animatedElements = activeSlide.querySelectorAll('[class*="a__"]');
+            animatedElements.forEach(el => {
+                const classes = el.className;
+                el.className = '';
+                setTimeout(() => {
+                    el.className = classes;
+                }, 10);
+            });
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') previousSlide();
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === ' ') {
+                e.preventDefault();
+                resetAnimations();
+            }
+        });
+    </script>
+</body>
+</html>
