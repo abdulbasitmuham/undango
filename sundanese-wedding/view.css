@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Sundanese Wedding Theme - Color Palette */
+:root {
+    --primary-beige: #f5f5dc;
+    --secondary-green: #8bc34a;
+    --accent-gold: #ffd700;
+    --warm-brown: #8d6e63;
+    --soft-cream: #faf6f2;
+    --earth-brown: #5d4e37;
+    --sage-green: #9caf88;
+    --golden-yellow: #f9c74f;
+    --text-dark: #2c3e50;
+    --text-light: #6c757d;
+}
+
+/* Custom Fonts for Sundanese Theme */
+@font-face {
+    font-family: "Sundanese Script";
+    src: url("assets/sundanese-font.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base Theme Styling */
+.card-swiper {
+    background: linear-gradient(135deg, var(--primary-beige) 0%, var(--soft-cream) 100%);
+}
+
+.card-swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+}
+
+.card-swiper .swiper-wrapper .swiper-slide .content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-swiper .swiper-wrapper .swiper-slide .content .fill > * {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.card-swiper .swiper-wrapper .swiper-slide .content .fill-header .header {
+    font-family: "Playfair Display", serif;
+    color: var(--earth-brown);
+    font-weight: 600;
+}
+
+/* Sundanese Pattern Overlay */
+.sundanese-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, var(--sage-green) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, var(--golden-yellow) 1px, transparent 1px);
+    background-size: 40px 40px, 30px 30px;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Opening Slide */
+.slide_opening {
+    background: linear-gradient(
+        45deg,
+        rgba(245, 245, 220, 0.9) 0%,
+        rgba(139, 195, 74, 0.8) 50%,
+        rgba(255, 215, 0, 0.7) 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.slide_opening::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('assets/sundanese-motif.png') repeat;
+    opacity: 0.1;
+    animation: float 20s ease-in-out infinite;
+}
+
+/* Quote Slide */
+.slide_quote {
+    background: rgba(250, 246, 242, 0.95) !important;
+    position: relative;
+}
+
+.slide_quote .sundanese-quote {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: var(--earth-brown);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slide_quote .quote-decoration {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--secondary-green), var(--accent-gold));
+    margin: 15px auto;
+}
+
+/* Couple Slide */
+.slide_couple {
+    background: rgba(245, 245, 220, 0.85) !important;
+    position: relative;
+}
+
+.couple-info {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--sage-green);
+}
+
+.couple-name {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    color: var(--earth-brown);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.couple-nickname {
+    font-family: "Sundanese Script", "Playfair Display", serif;
+    font-size: 2.2rem;
+    color: var(--secondary-green);
+    margin: 10px 0;
+}
+
+.couple-parents {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Event Slide */
+.slide_event {
+    background: rgba(156, 175, 136, 0.3) !important;
+    position: relative;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--accent-gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url('assets/batik-corner.png') no-repeat;
+    background-size: contain;
+    opacity: 0.3;
+}
+
+.event-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: var(--earth-brown);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.event-date {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-green);
+    font-weight: 500;
+}
+
+.event-time {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.event-location {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.sundanese-tradition {
+    background: linear-gradient(135deg, var(--golden-yellow), var(--accent-gold));
+    color: var(--earth-brown);
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+    margin-top: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+/* Message Slide */
+.slide_message {
+    background: rgba(250, 246, 242, 0.9) !important;
+}
+
+/* Story Slide */
+.slide_story {
+    background: rgba(245, 245, 220, 0.9) !important;
+}
+
+.story-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.story-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid var(--secondary-green);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-date {
+    font-family: "Poppins", sans-serif;
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.story-caption {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* Gallery Slide */
+.slide_gallery {
+    background: rgba(156, 175, 136, 0.2) !important;
+}
+
+/* Wish Slide */
+.slide_wish {
+    background: rgba(255, 215, 0, 0.2) !important;
+}
+
+/* Closing Slide */
+.slide_closing {
+    background: linear-gradient(
+        135deg,
+        rgba(245, 245, 220, 0.9) 0%,
+        rgba(139, 195, 74, 0.8) 100%
+    );
+    position: relative;
+}
+
+.closing-message {
+    font-family: "Playfair Display", serif;
+    color: var(--earth-brown);
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.closing-signature {
+    font-family: "Sundanese Script", "Playfair Display", serif;
+    color: var(--secondary-green);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.sundanese-closing {
+    font-family: "Playfair Display", serif;
+    color: var(--accent-gold);
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.open-btn {
+    --btn-outline-custom-color: var(--secondary-green);
+    background: linear-gradient(135deg, var(--secondary-green), var(--sage-green));
+    border: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(139, 195, 74, 0.3);
+    transition: all 0.3s ease;
+}
+
+.open-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 195, 74, 0.4);
+    background: linear-gradient(135deg, var(--sage-green), var(--secondary-green));
+}
+
+/* Sundanese Decorative Elements */
+.sundanese-ornament {
+    position: absolute;
+    background: url('assets/sundanese-ornament.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.6;
+}
+
+.ornament-top-left {
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.ornament-top-right {
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    transform: scaleX(-1);
+}
+
+.ornament-bottom-left {
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    transform: scaleY(-1);
+}
+
+.ornament-bottom-right {
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    transform: scale(-1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .couple-name {
+        font-size: 1.5rem;
+    }
+    
+    .couple-nickname {
+        font-size: 1.8rem;
+    }
+    
+    .event-title {
+        font-size: 1.3rem;
+    }
+    
+    .event-card {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .ornament-top-left,
+    .ornament-top-right,
+    .ornament-bottom-left,
+    .ornament-bottom-right {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .card-swiper .swiper-wrapper .swiper-slide .content .fill > * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .couple-info {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .event-card {
+        padding: 15px;
+    }
+    
+    .ornament-top-left,
+    .ornament-top-right,
+    .ornament-bottom-left,
+    .ornament-bottom-right {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Animation Effects */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInSundanese {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-sundanese {
+    animation: fadeInSundanese 1s ease-out;
+}
+
+/* Batik Pattern Background */
+.batik-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/batik-pattern.png');
+    background-repeat: repeat;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+/* Traditional Border */
+.traditional-border {
+    border: 3px solid;
+    border-image: linear-gradient(45deg, var(--secondary-green), var(--accent-gold), var(--secondary-green)) 1;
+    border-radius: 10px;
+}

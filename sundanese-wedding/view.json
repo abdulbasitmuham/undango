@@ -1,0 +1,373 @@
+{
+    "slides": {
+        "slide_opening": {
+            "title": "Pembuka",
+            "icon_class": "ti ti-sun",
+            "show_header": false,
+            "video_mode": true,
+            "fields": {
+                "cover_title": {
+                    "type": "text",
+                    "label": "Judul Sampul",
+                    "default": "The Wedding of"
+                },
+                "sundanese_greeting": {
+                    "type": "text",
+                    "label": "Salam Sunda",
+                    "default": "Wilujeng Sumping"
+                },
+                "show_countdown": {
+                    "type": "switch",
+                    "label": "Tampilkan Hitung Mundur",
+                    "default": true,
+                    "package": 2
+                },
+                "show_save_the_date": {
+                    "type": "switch",
+                    "label": "Tampilkan Simpan Tanggal",
+                    "default": false,
+                    "package": 2
+                }
+            }
+        },
+        "slide_quote": {
+            "title": "Kutipan",
+            "icon_class": "ti ti-quote",
+            "show_header": false,
+            "video_mode": true,
+            "fields": {
+                "couple_logo": {
+                    "type": "select",
+                    "label": "Logo Mempelai",
+                    "default": "warm",
+                    "options": {
+                        "elegant": "Elegant",
+                        "warm": "Warm",
+                        "clean": "Clean"
+                    }
+                },
+                "quote_content": {
+                    "type": "textarea",
+                    "label": "Isi Kutipan",
+                    "assistant": "Berikan contoh kutipan undangan pernikahan Sunda yang menggunakan Al Quran dan tradisi Sunda",
+                    "default": "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."
+                },
+                "quote_source": {
+                    "type": "text",
+                    "label": "Sumber Kutipan",
+                    "default": "QS. Ar-Rum: 21"
+                },
+                "sundanese_wisdom": {
+                    "type": "textarea",
+                    "label": "Pepatah Sunda",
+                    "default": "Cinta moal layu ku usum, moal garing ku halodo"
+                }
+            }
+        },
+        "slide_couple": {
+            "title": "Data Mempelai",
+            "icon_class": "ti ti-users",
+            "show_header": false,
+            "video_mode": true,
+            "fields": {
+                "groom_fullname": {
+                    "type": "text",
+                    "label": "Nama Lengkap Mempelai Pria",
+                    "default": "Ahmad Sundara"
+                },
+                "groom_nickname": {
+                    "type": "text",
+                    "label": "Nama Panggilan Mempelai Pria",
+                    "default": "Sundara"
+                },
+                "groom_father": {
+                    "type": "text",
+                    "label": "Nama Ayah Mempelai Pria",
+                    "default": "Bapak Asep Suryadi"
+                },
+                "groom_mother": {
+                    "type": "text",
+                    "label": "Nama Ibu Mempelai Pria",
+                    "default": "Ibu Siti Rohayati"
+                },
+                "groom_child_order": {
+                    "type": "text",
+                    "label": "Anak ke-",
+                    "default": "Putra pertama"
+                },
+                "groom_photo": {
+                    "type": "file",
+                    "label": "Foto Mempelai Pria",
+                    "mimes": "jpg,png,jpeg,webp"
+                },
+                "bride_fullname": {
+                    "type": "text",
+                    "label": "Nama Lengkap Mempelai Wanita",
+                    "default": "Sari Dewi Sundari"
+                },
+                "bride_nickname": {
+                    "type": "text",
+                    "label": "Nama Panggilan Mempelai Wanita",
+                    "default": "Sari"
+                },
+                "bride_father": {
+                    "type": "text",
+                    "label": "Nama Ayah Mempelai Wanita",
+                    "default": "Bapak Dedi Mulyadi"
+                },
+                "bride_mother": {
+                    "type": "text",
+                    "label": "Nama Ibu Mempelai Wanita",
+                    "default": "Ibu Neneng Salmah"
+                },
+                "bride_child_order": {
+                    "type": "text",
+                    "label": "Anak ke-",
+                    "default": "Putri kedua"
+                },
+                "bride_photo": {
+                    "type": "file",
+                    "label": "Foto Mempelai Wanita",
+                    "mimes": "jpg,png,jpeg,webp"
+                },
+                "bride_first": {
+                    "type": "switch",
+                    "label": "Nama Wanita di Depan",
+                    "default": false
+                }
+            }
+        },
+        "slide_event": {
+            "title": "Acara",
+            "icon_class": "ti ti-calendar",
+            "show_header": false,
+            "video_mode": true,
+            "fields": {
+                "akad_nikah": {
+                    "type": "switch",
+                    "label": "Tampilkan Akad Nikah",
+                    "default": true
+                },
+                "akad_date": {
+                    "type": "date",
+                    "label": "Tanggal Akad Nikah",
+                    "default": "2025-07-20"
+                },
+                "akad_time": {
+                    "type": "time",
+                    "label": "Waktu Akad Nikah",
+                    "default": "08:00"
+                },
+                "akad_time_end": {
+                    "type": "time",
+                    "label": "Waktu Selesai Akad Nikah",
+                    "default": "10:00"
+                },
+                "akad_location": {
+                    "type": "text",
+                    "label": "Tempat Akad Nikah",
+                    "default": "Masjid Agung Bandung"
+                },
+                "akad_address": {
+                    "type": "textarea",
+                    "label": "Alamat Lengkap Akad Nikah",
+                    "default": "Jl. Asia Afrika No. 92, Bandung, Jawa Barat"
+                },
+                "akad_maps": {
+                    "type": "map",
+                    "label": "Lokasi Map Akad Nikah",
+                    "default": "-6.921462, 107.609344"
+                },
+                "event_date": {
+                    "type": "date",
+                    "label": "Tanggal Resepsi",
+                    "default": "2025-07-20"
+                },
+                "event_time": {
+                    "type": "time",
+                    "label": "Waktu Resepsi",
+                    "default": "19:00"
+                },
+                "event_time_end": {
+                    "type": "time",
+                    "label": "Waktu Selesai Resepsi",
+                    "default": "21:00"
+                },
+                "event_location": {
+                    "type": "text",
+                    "label": "Tempat Resepsi",
+                    "default": "Gedung Serbaguna Saung Udjo"
+                },
+                "event_address": {
+                    "type": "textarea",
+                    "label": "Alamat Lengkap Resepsi",
+                    "default": "Jl. Padasuka No. 118, Bandung, Jawa Barat"
+                },
+                "event_maps": {
+                    "type": "map",
+                    "label": "Lokasi Map Resepsi",
+                    "default": "-6.942764, 107.655537"
+                },
+                "sundanese_tradition": {
+                    "type": "textarea",
+                    "label": "Tradisi Sunda",
+                    "default": "Acara akan dimeriahkan dengan tarian Jaipong dan musik tradisional Degung"
+                }
+            }
+        },
+        "slide_message": {
+            "title": "Ucapan",
+            "icon_class": "ti ti-message",
+            "show_header": true,
+            "video_mode": false,
+            "fields": {
+                "enable_message": {
+                    "type": "switch",
+                    "label": "Aktifkan Ucapan",
+                    "default": true
+                },
+                "message_title": {
+                    "type": "text",
+                    "label": "Judul Halaman Ucapan",
+                    "default": "Ucapan & Doa"
+                },
+                "message_subtitle": {
+                    "type": "textarea",
+                    "label": "Subtitle Halaman Ucapan",
+                    "default": "Berikan ucapan dan doa terbaik untuk kedua mempelai"
+                }
+            }
+        },
+        "slide_story": {
+            "title": "Kisah Cinta",
+            "icon_class": "ti ti-heart",
+            "show_header": true,
+            "video_mode": false,
+            "fields": {
+                "enable_story": {
+                    "type": "switch",
+                    "label": "Aktifkan Kisah Cinta",
+                    "default": false,
+                    "package": 2
+                },
+                "story_title": {
+                    "type": "text",
+                    "label": "Judul Kisah Cinta",
+                    "default": "Lalampahan Cinta",
+                    "package": 2
+                },
+                "story_subtitle": {
+                    "type": "textarea",
+                    "label": "Subtitle Kisah Cinta",
+                    "default": "Kisah perjalanan cinta kami yang dimulai dari pertemuan sederhana hingga menjadi ikatan suci",
+                    "package": 2
+                },
+                "stories": {
+                    "type": "stories",
+                    "label": "Timeline Kisah Cinta",
+                    "array_max": 5,
+                    "package": 2,
+                    "default": [
+                        {
+                            "date": "2020-02-14",
+                            "file": "",
+                            "caption": "Pertama kali kami bertemu di acara keluarga. Takdir mempertemukan kami dalam keindahan tradisi Sunda."
+                        },
+                        {
+                            "date": "2021-08-17",
+                            "file": "",
+                            "caption": "Hubungan kami semakin serius. Kami saling mengenal keluarga dan tradisi masing-masing."
+                        },
+                        {
+                            "date": "2024-01-01",
+                            "file": "",
+                            "caption": "Lamaran resmi dilakukan dengan adat Sunda yang penuh kehangatan dan berkah."
+                        }
+                    ]
+                }
+            }
+        },
+        "slide_gallery": {
+            "title": "Galeri",
+            "icon_class": "ti ti-photo",
+            "show_header": true,
+            "video_mode": false,
+            "fields": {
+                "enable_gallery": {
+                    "type": "switch",
+                    "label": "Aktifkan Galeri",
+                    "default": false,
+                    "package": 2
+                },
+                "gallery_title": {
+                    "type": "text",
+                    "label": "Judul Galeri",
+                    "default": "Galeri Foto",
+                    "package": 2
+                },
+                "gallery_subtitle": {
+                    "type": "textarea",
+                    "label": "Subtitle Galeri",
+                    "default": "Kumpulan momen berharga perjalanan cinta kami",
+                    "package": 2
+                },
+                "gallery_photos": {
+                    "type": "files",
+                    "label": "Foto Galeri",
+                    "mimes": "jpg,png,jpeg,webp",
+                    "array_max": 12,
+                    "package": 2
+                }
+            }
+        },
+        "slide_wish": {
+            "title": "Hadiah",
+            "icon_class": "ti ti-gift",
+            "show_header": true,
+            "video_mode": false,
+            "fields": {
+                "enable_wish": {
+                    "type": "switch",
+                    "label": "Aktifkan Hadiah",
+                    "default": false,
+                    "package": 3
+                },
+                "wish_title": {
+                    "type": "text",
+                    "label": "Judul Hadiah",
+                    "default": "Hadiah Pernikahan",
+                    "package": 3
+                },
+                "wish_subtitle": {
+                    "type": "textarea",
+                    "label": "Subtitle Hadiah",
+                    "default": "Tanpa mengurangi rasa hormat, bagi yang ingin memberikan tanda kasih dapat melalui:",
+                    "package": 3
+                }
+            }
+        },
+        "slide_closing": {
+            "title": "Penutup",
+            "icon_class": "ti ti-heart-handshake",
+            "show_header": false,
+            "video_mode": true,
+            "fields": {
+                "closing_message": {
+                    "type": "textarea",
+                    "label": "Pesan Penutup",
+                    "default": "Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai."
+                },
+                "closing_signature": {
+                    "type": "text",
+                    "label": "Tanda Tangan",
+                    "default": "Keluarga Besar Kedua Mempelai"
+                },
+                "sundanese_closing": {
+                    "type": "text",
+                    "label": "Penutup Sunda",
+                    "default": "Hatur nuhun pisan"
+                }
+            }
+        }
+    }
+}

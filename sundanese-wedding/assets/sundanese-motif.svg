@@ -1,0 +1,25 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Traditional Sundanese motif pattern -->
+  <defs>
+    <pattern id="sundaneseMotif" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+      <!-- Traditional flower motif -->
+      <circle cx="12.5" cy="12.5" r="8" fill="none" stroke="#8bc34a" stroke-width="1" opacity="0.4"/>
+      <circle cx="12.5" cy="12.5" r="4" fill="#ffd700" opacity="0.3"/>
+      
+      <!-- Small decorative dots -->
+      <circle cx="6" cy="6" r="1.5" fill="#8bc34a" opacity="0.5"/>
+      <circle cx="19" cy="19" r="1.5" fill="#8bc34a" opacity="0.5"/>
+      <circle cx="6" cy="19" r="1" fill="#ffd700" opacity="0.6"/>
+      <circle cx="19" cy="6" r="1" fill="#ffd700" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background pattern -->
+  <rect width="100" height="100" fill="url(#sundaneseMotif)"/>
+  
+  <!-- Additional decorative elements -->
+  <g opacity="0.2">
+    <path d="M10,10 Q25,5 40,10 Q35,25 40,40 Q25,35 10,40 Q15,25 10,10" fill="#8bc34a"/>
+    <path d="M60,60 Q75,55 90,60 Q85,75 90,90 Q75,85 60,90 Q65,75 60,60" fill="#ffd700"/>
+  </g>
+</svg>
